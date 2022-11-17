@@ -68,6 +68,7 @@ main {
     to {
         opacity: 0;
         pointer-events: all;
+        z-index: 0;
     }
 }
 
