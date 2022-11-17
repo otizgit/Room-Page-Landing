@@ -363,3 +363,18 @@ button img {
         height: 850px;
     }  
 }
+
+@media (max-width: 835px) and (min-width: 451px){
+    .content {
+        text-align: center;
+    }
+    .content > h1 {
+        font-size: 35px;
+    }  
+    .links a {
+        justify-content: center;
+    }
+    .grid-main-content {
+        text-align: center;
+    }
+}
