@@ -23,6 +23,52 @@ img {
 main {
     min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 70;
+    background: rgba(0, 0, 0, 0.87);
+    animation: load 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.logo-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: logo-slide 1s ease forwards;
+}
+
+.logo-over img {
+    width: 150px;
+}
+
+@keyframes logo-slide {
+    from {
+        transform: translateX(-1000%);
+        rotate: 20deg;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes load {
+    from {
+        opacity: 1;
+        pointer-events: none;
+    }
+    to {
+        opacity: 0;
+        pointer-events: all;
+    }
 }
 
 header {
