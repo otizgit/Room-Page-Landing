@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Page Landing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="hamburger">
+                <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="currentColor" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/logo.svg">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="lists"><a href="#">Home</a></li>
+                    <li class="lists"><a href="#">Shop</a></li>
+                    <li class="lists"><a href="#">About</a></li>
+                    <li class="lists"><a href="#">Contact</a></li> 
+                    <li class="close">
+                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/></svg>
+                    </li>   
+                </ul>
+            </nav>
+        </header>
+        <div class="carousel">
+            <div class="carousel-img-container">
+                <div class="carousel-img-track">
+                    <div class="carousel-img-slide image-current-slide">
+                        <picture>
+                            <source media="(max-width: 450px)" srcset="./images/mobile-image-hero-1.jpg">
+                            <img class="carousel-img" carousel-img src="./images/desktop-image-hero-1.jpg">
+                        </picture>
+                    </div>
+                    <div class="carousel-img-slide">
+                        <picture>
+                            <source media="(max-width: 450px)" srcset="./images/mobile-image-hero-2.jpg">
+                            <img class="carousel-img" carousel-img src="./images/desktop-image-hero-2.jpg">
+                        </picture>
+                    </div>
+                    <div class="carousel-img-slide">
+                        <picture>
+                            <source media="(max-width: 450px)" srcset="./images/mobile-image-hero-3.jpg">
+                            <img class="carousel-img" carousel-img src="./images/desktop-image-hero-3.jpg">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-content-container">
+                <div class="carousel-content-track">
+                    <div class="carousel-content content-current-slide">
+                        <div class="content">
+                            <h1>Discover innovative <br> ways to decorate</h1>
+                            <p class="subs">
+                                We provide unmatched quality, comfort, and style for property owners across the country. 
+                                Our experts combine form and function in bringing your vision to life. Create a room in your 
+                                own style with our collection and make your property a reflection of you and what you love.
+                            </p>
+                            <div class="links">
+                                <a href="#">
+                                    <p>Shop now</p>
+                                    <span><img src="./images/icon-arrow.svg"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-content">
+                        <div class="content">
+                            <h1>We are available all <br> across the globe</h1>
+                            <p class="subs">
+                                With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+                                Locally, we're in most major cities throughout the country. Find the branch nearest you using our 
+                                store locator. Any questions? Don't hesitate to contact us today.
+                            </p>
+                            <div class="links">
+                                <a href="#">
+                                    <p>Shop now</p>
+                                    <span><img src="./images/icon-arrow.svg"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-content">
+                        <div class="content">
+                            <h1>Manufactured with <br> the best materials</h1>
+                            <p class="subs">
+                                Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+                                to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+                                experience in this industry, we understand what customers want for their home and office.
+                            </p>
+                            <div class="links">
+                                <a href="#">
+                                    <p>Shop now</p>
+                                    <span><img src="./images/icon-arrow.svg"></span>
+                                </a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="prev-btn is-hidden">
+                    <img src="./images/icon-angle-left.svg">
+                </button>
+                <button class="next-btn">
+                    <img src="./images/icon-angle-right.svg">
+                </button>
+            </div>
+        </div>
+
+        <div class="bottom-content">
+            <div class="grid-item">
+                <img src="./images/image-about-dark.jpg">
+            </div>
+            <div class="grid-item center-item">
+                <div class="grid-main-content">
+                    <p class="about">About our furniture</p>
+                    <p class="subs">
+                        Our multifunctional collection blends design and function to suit your individual taste.
+                        Make each room unique, or pick a cohesive theme that best express your interests and what
+                        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                        or anything in between. Product specialists are available to help you create your dream space.
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./images/image-about-light.jpg">
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
