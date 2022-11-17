@@ -64,6 +64,7 @@ main {
     from {
         opacity: 1;
         pointer-events: none;
+        z-index: 70;
     }
     to {
         opacity: 0;
